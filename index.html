@@ -199,7 +199,7 @@ Chamdi by POT - Duy Co
     <section class="wrapper style1 align-center" id="orderProduct">
         <div class="inner medium">
             <h2>HÃY ĐỂ CHÚNG TÔI LIÊN HỆ BẠN</h2>
-            <form method="post" action="#">
+            <form action="POST" data-netlify="true">
                 <div class="fields">
                     <div class="field half">
                         <label for="name">Tên</label>
@@ -214,8 +214,8 @@ Chamdi by POT - Duy Co
                         <label for="department">Điều bạn muốn ?</label>
                         <select name="department" id="department">
                             <option value="">- Lựa chọn -</option>
-                            <option value="1">Tư vấn</option>
-                            <option value="2">Đặt hàng</option>
+                            <option value="tuvan">Tư vấn</option>
+                            <option value="dathang">Đặt hàng</option>
                         </select>
                     </div>
                     <div class="field third">
@@ -234,7 +234,9 @@ Chamdi by POT - Duy Co
                         <label for="message">Mô tả</label>
                         <textarea name="message" id="message" rows="6"></textarea>
                     </div>
-
+                    <div class="field">
+                        <div data-netlify-recaptcha="true"></div>
+                    </div>
                 </div>
                 <ul class="actions special">
                     <li><input type="submit" name="submit" id="submit" value="Gửi" /></li>
